@@ -1,5 +1,3 @@
-# ModelAssistant
-
 ## Initial Design
 ```mermaid
 
