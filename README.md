@@ -16,7 +16,7 @@ flowchart TD
 
         B --> I[API Expert LLM Agent] --> |compose API call| D[Model API/Tool Store] --> |return results| B
         
-        E@{shape: cyl, label: "Model Knowledge Base (VDB)"} -->H[RAG LLM Agent]  --> B
+        E@{shape: cyl, label: "Model Knowledge Base (VDB)"} -->H[RAG LLM Agent]  <--> B
         
         B <-->G[Memory Module]
         L[Text Embeding and Indexing] --> E
