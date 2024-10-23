@@ -19,15 +19,16 @@ flowchart TD
         E@{shape: cyl, label: "Model Knowledge Base (VDB)"} -->H[RAG LLM Agent]  --> B
         
         B <-->G[Memory Module]
-
+        L[Text Embeding and Indexing] --> E
 
     end
-    F@{shape: cyl, label: "Model Data (DB)"} --> |Indexing and Labelling| E
+    F@{shape: cyl, label: "Model Data (DB)"} --> |Data Indexing and Labelling| E
 
     N@{ shape: procs, label: "Model APIs"} --> D
 
-    J@{ shape: docs, label: "Model Documents" } --> L[Text Embeding and Indexing] --> E
+    J@{ shape: docs, label: "Model Documents" } --> L
     K@{ shape: docs, label: "Model Source Code" } --> L
-    M@{ shape: docs, label: "BAU Model Reports" } --> L    
+    M@{ shape: docs, label: "BAU Model Reports" } --> L
+    
 ```
 
